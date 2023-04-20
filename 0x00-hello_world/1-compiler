@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFIC
+gcc -c $CFILE
