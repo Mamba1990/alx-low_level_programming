@@ -1,10 +1,12 @@
 #include <stdio.h>
-/**
- * My main function printing a message
+/*
+ * main: the main function prints a message using puts
+ *
+ * Return: 0
  */
 int main (void)
 {
-         puts("\"Programming is like building a multilingual puzzle");
+         puts("\" Programming is like building a multilingual puzzle");
 	 return(0);
 }
 
