@@ -25,5 +25,5 @@ int main(void)
 	{
 	       printf("%d is zero\n", n);
 	}
-	retrun (0);
+	return (0);
 }     
