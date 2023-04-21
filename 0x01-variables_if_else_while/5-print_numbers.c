@@ -2,7 +2,7 @@
 /**
 * main - Entry point
 *
-* Description: 'the program's description'
+* Description: 'the program's description
 * Return: 0
 */
 int main(void)
@@ -16,4 +16,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-	
