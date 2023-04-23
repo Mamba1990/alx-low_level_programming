@@ -7,23 +7,20 @@
 */
 int main(void)
 {
-	int a, b, c;
+	int a, b;
 
-	for (a = 48; a < 58; a++)
+	for (a = 48; a <= 56; a++)
 	{
-		for (b = 49; b < 58; b++)
+		for (b = 49; b <= 57; b++)
 		{
-			for (c = 50; c < 58; c++)
+			if (b > a)
 			{
-				if (c > b && b > a)
+				putchar(a);
+				putchar(b);
+				if (a != 56 || b != 57)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					if (a != 55 || b != 56)
-					{
-						putchar(',',' ');					
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
@@ -31,4 +28,5 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
 
