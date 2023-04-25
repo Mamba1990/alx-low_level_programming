@@ -5,14 +5,14 @@
 * Description: 'the program's description'
 * Return: 0
 */
-int main(void)
+void print_alphabet(void)
 {
-	int i = 97;
+	char lower_case = 'a';
 
-	while (i <= 122)
+	while (lower_case <= 'z')
 {
-		_putchar(i);
-		i++;
+		_putchar(lower_case);
+		lower_case;
 }
 _putchar('\n');
 return (0);
