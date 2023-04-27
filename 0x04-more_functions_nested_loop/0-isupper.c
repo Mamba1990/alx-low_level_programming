@@ -8,7 +8,7 @@
 */
 int _isupper(int x)
 {
-	if(x >= 65 && x <= 90)
+	if (x >= 65 && x <= 90)
 	{
 		return (1);
 	}
@@ -16,5 +16,5 @@ int _isupper(int x)
 	{
 		return (0);
 	}
-_putchar('\n');
+	_putchar('\n');
 }
