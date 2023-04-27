@@ -6,5 +6,6 @@ int _isdigit(int c);
 int _isupper(int c);
 int mul(int a, int b);
 void print_square(int size);
+void print_triangle(int size);
 
 #endif

@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-*print_square -  prints a square
+*print_triangle -  prints a triangle
 *@size: The size is an integer
 *Description: 'the program's description'
-*Return: square
+*Return: triangle
 */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int x, y, z;
 
