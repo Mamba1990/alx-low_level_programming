@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _isupper - Checks for uppercase character
-*@c: The character is in ASCII code
+*@c: The number to be checked
 *
 *Description: 'the program's description'
 *Return: 0
@@ -13,7 +13,6 @@ int _isupper(int c)
 		return (1);
 	}
 	else
-	{
 		return (0);
-	}
+_putchar('\n');
 }
