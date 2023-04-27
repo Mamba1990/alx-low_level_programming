@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints a Fizz Buzz profram
- * return: always 0
- */
+* main - prints a Fizz Buzz profram
+*
+* * Return: Always 0.
+*/
 int main(void)
 {
 	int x;
