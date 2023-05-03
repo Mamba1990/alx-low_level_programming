@@ -14,23 +14,23 @@ int _atoi(char *s)
 
 	while (s[i])
 	{ 
-		if (s[i] == 45)
+	if (s[i] == 45)
 		{		
-			m *= -1;
-		}
-		while (s[i] >= 45 && s[i] <= 57)
-		{
-			ss = 1;
-			n =(n * 10) + (s[i] - '0');
-			i++;
-		}
-		if ( ss == 1)
-		{
-			break;
-		}
-		i++;
+	m *= -1;
 	}
-		n *= m;
-		return (n);
+	while (s[i] >= 48 && s[i] <= 57)
+	{
+	ss = 1;
+	n = (n * 10) + (s[i] - '0');
+	i++;
+	}
+	if ( ss == 1)
+	{
+	break;
+	}
+	i++;
+	}
+	n *= m;
+	return (n);
 }
 	
