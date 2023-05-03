@@ -4,6 +4,7 @@
 /**
 * _atoi - converts a string to an integer
 * @s: string input
+* Return: integer
 */
 int _atoi(char *s)
 {
@@ -13,9 +14,9 @@ int _atoi(char *s)
 	int ss = 0;
 
 	while (s[i])
-	{ 
+	{
 	if (s[i] == 45)
-		{		
+		{
 	m *= -1;
 	}
 	while (s[i] >= 48 && s[i] <= 57)
@@ -24,7 +25,7 @@ int _atoi(char *s)
 	n = (n * 10) + (s[i] - '0');
 	i++;
 	}
-	if ( ss == 1)
+	if (ss == 1)
 	{
 	break;
 	}
@@ -33,4 +34,4 @@ int _atoi(char *s)
 	n *= m;
 	return (n);
 }
-	
+
