@@ -2,7 +2,7 @@
 /**
 * _strncat - concatenate two strings
 * @dest: input
-* @src: input 
+* @src: input
 * @n: input integer
 * Return: dest
 */
@@ -10,7 +10,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int dest_length = 0;
 	int src_length = 0;
-	
+
 	while (*(dest + dest_length) != '\0')
 	{
 		dest_length++;
