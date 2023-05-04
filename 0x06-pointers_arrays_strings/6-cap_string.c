@@ -7,26 +7,28 @@
 */
 char *cap_string(char *str)
 {
-	int str_lenght = 0;
+	int i = 0;
 
-	while (*(str + str_lenght))
+	while (*(str + i))
 	{
-		while (!(str[str_lenght] >= 97 && str[str_lenght] <= 122))
-			str_lenght++;
-		if (str[str_lenght - 1] == ' ' || str[str_lenght - 1] == '\t' || str[str_lenght - 1] == '\n' ||
-						str[str_lenght - 1] == ',' ||
-						str[str_lenght - 1] == ';' ||
-						str[str_lenght - 1] == '.' ||
-						str[str_lenght - 1] == '!' ||
-						str[str_lenght - 1] == '?' ||
-						str[str_lenght - 1] == '"' ||
-						str[str_lenght - 1] == '(' ||
-						str[str_lenght - 1] == ')' ||
-						str[str_lenght - 1] == '{' ||
-						str[str_lenght - 1] == '}' ||
-						str_lenght == 0)
-			str[str_lenght] -= 32;
-				str_lenght++;
+		while (!(str[i] >= 97 && str[i] <= 122))
+		i++;
+		if (str[i - 1] == ' ' ||
+		str[i - 1] == '\t' ||
+		str[i - 1] == '\n' ||
+		str[i - 1] == ',' ||
+		str[i - 1] == '.' ||
+		str[i - 1] == ';' ||
+		str[i - 1] == '!' ||
+		str[i - 1] == '?' ||
+		str[i - 1] == '"' ||
+		str[i - 1] == '(' ||
+		str[i - 1] == ')' ||
+		str[i - 1] == '{' ||
+		str[i - 1] == '}' ||
+		i == 0)
+		str[i] -= 32;
+		i++;
 	}
 	return (str);
 }
