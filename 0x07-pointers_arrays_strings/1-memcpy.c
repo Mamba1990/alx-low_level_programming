@@ -19,14 +19,15 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		for ( ; *(src + j) != '\0'; j++)
 		{
-			for ( ; dest[k] != '\0'; k++)
+			for ( ; k < j; k++)
 			{
-				dest[k] = dest[j];
+				dest[k] = src[j];
 			}
 			j++;
 		}
 		i++;
 		n--;
 	}
+	dest[j] = '\0';
 	return (dest);
 }
