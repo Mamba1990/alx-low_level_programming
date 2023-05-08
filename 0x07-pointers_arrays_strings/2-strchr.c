@@ -1,11 +1,11 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
- * _strchr -  locates a character in a string.
- * @s: string input
- * @c: char input
+ * _strchr - locates a character in a string.
+ * @s:  input string
+ * @c:  input char
  *
- * Return: 0
+ * Return: location of charachter or NULL
  */
 
 char *_strchr(char *s, char c)
@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 	int j;
 
 	j = 0;
-	while (*(s + j) != '\0')
+	while (*(s + j) >= '\0')
 	{
 		if (s[j] == c)
 		{
@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 		}
 		j++;
 	}
-	return (0);
+return (NULL);
 }
 
 
