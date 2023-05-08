@@ -4,6 +4,7 @@
  * _strchr -  locates a character in a string.
  * @s: string input
  * @c: char input
+ *
  * Return: 0
  */
 
@@ -20,7 +21,7 @@ char *_strchr(char *s, char c)
 		}
 		j++;
 	}
-return (0);
+	return (0);
 }
 
 
