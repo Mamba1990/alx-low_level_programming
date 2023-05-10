@@ -22,7 +22,7 @@ int __sqrt_recursion(int n, int i);
 }
 
 /**
- * __sqrt_recursion - recurses to find the natural 
+ * __sqrt_recursion - recurses to find the natural
  * square root of a number
  * @n: integer input
  * @i: iterator
