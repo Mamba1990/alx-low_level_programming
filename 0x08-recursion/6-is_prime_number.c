@@ -16,7 +16,7 @@ return (__prime(n, n - 1));
 }
 
 /**
- * actual_prime - calculates if a number is prime
+ * __prime - calculates if a number is prime
  * @n: integer input
  * @i: iterator
  *
