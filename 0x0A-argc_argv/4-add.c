@@ -2,41 +2,61 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+
+/**
+ * is_num - checks if there is digit in string
+ * @str: input
+ *
+ * Return: Always 0 (Success)
+ */
+int is_num(char *str)
+{
+	unsigned int c;
+
+	c = 0;
+	while (c < strlen(str))
+	{
+		if (!isdigit(str[c]))
+		{
+			return (0);
+		}
+		c++;
+	}
+	return (1);
+}
+
 /**
  * main - Entry point.
  * @argc: argument count
  * @argv: argument vector (one dim array)
  *
- * Return: Always 0 
+ * Return: Always 0
 */
+
 int main(int argc, char *argv[])
 {
-	int i;
-	unsigned int j, sum = 0;
-	char *c;
+	int c;
+	int strToInt;
+	int sum = 0;
 
-	if (argc > 1)
+	c = 1;
+
+	while (c < argc)
 	{
-		for (i = 1; i < argc; i++)
+		if (is_num(argv[c]))
 		{
-			c = argv[i];
-		for (j = 0;j < strlen(c); j++)
-		{
-			if (c[j] < 48 || c[j] > 57)
-			{
-				printf("Error\n");
-				return (1);
-			}
+			strToInt = atoi(argv[c]);
+			sum += strToInt;
 		}
-		sum += atoi(c);
+
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 		c++;
-		}
-		printf("%d\n", sum);
 	}
-	else
-	{
-		printf("0\n");
-	}
+	printf("%d\n", sum);
 	return (0);
 }
-
