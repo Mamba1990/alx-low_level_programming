@@ -12,10 +12,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int j, sum;
+	unsigned int j, sum = 0;
 	char *c;
-	
-	sum = 0;
 
 	if (argc > 1)
 	{
@@ -39,6 +37,6 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-return (0);
+	return (0);
 }
 
