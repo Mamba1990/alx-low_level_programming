@@ -7,8 +7,8 @@
  * @argc: argument count
  * @argv: argument vector (one dim array)
  *
- * Return: Always 0 or 1
- */
+ * Return: Always 0 
+*/
 int main(int argc, char *argv[])
 {
 	int i;
