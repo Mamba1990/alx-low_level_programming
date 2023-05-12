@@ -2,18 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /**
  * main - Entry point.
  * @argc: argument count
  * @argv: argument vector (one dim array)
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 or 1
  */
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned j, sum;
+	unsigned int j, sum;
 	char *c;
 	
 	sum = 0;
