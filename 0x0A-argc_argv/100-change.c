@@ -12,7 +12,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int number,i ,res;
+	int number, i, res;
 	int _coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
