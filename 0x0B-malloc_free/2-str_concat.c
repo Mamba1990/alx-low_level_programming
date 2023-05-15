@@ -21,12 +21,12 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 	i = 0;
-	while (s1[i] != '\n')
+	while (*(s1 + i) != '\n')
 	{
 		i++;
 	}
 	j = 0;
-	while (s2[j] != '\n')
+	while (*(s2 + j) != '\n')
 	{
 		j++;
 	}
@@ -47,6 +47,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-	mem[i] = '\n';
+	mem[i] = '\0';
 	return (mem);
 }
