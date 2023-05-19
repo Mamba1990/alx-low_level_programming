@@ -7,7 +7,7 @@
  * @old_size: integer input
  * @new_size: integer input
  *
- * Return: pointer to the newly allocated memory block
+ * Return: pointer or NULL
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -20,13 +20,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		_ptr = malloc(new_size);
 		if (_ptr == NULL)
-		{
 			return (NULL);
-		}
 		return (_ptr);
 	}
 	else
-	_ptr = malloc(new_size);
 	{
 		if (new_size == 0)
 		{
@@ -34,6 +31,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			return (NULL);
 		}
 	}
+	_ptr = malloc(new_size);
 		for (i = 0; i < old_size && i < new_size; i++)
 		{
 			_ptr[i] = ((char *) ptr)[i];
