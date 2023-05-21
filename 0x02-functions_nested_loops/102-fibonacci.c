@@ -17,11 +17,11 @@ int main(void)
 		printf("%lu", sum);
 		f1 = f2;
 		f2 = sum;
-		c++;
 		if (c == 49)
 			printf("\n");
 		else
 			printf(", ");
+		c++;
 	}
 	return (0);
 }
