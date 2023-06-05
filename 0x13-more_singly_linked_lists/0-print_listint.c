@@ -10,12 +10,12 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t c;
-	unsigned int len = 0;
+	/* unsigned int len = 0;*/
 
 	for (c = 0; h != NULL; c++)
 	{
-		len += printf("%d\n", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
-	return (len);
+	return (c);
 }
