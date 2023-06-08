@@ -8,11 +8,10 @@
  */
 void print_binary(unsigned long int n)
 {
-	int j, c;
+	int j, c = 0;
 	unsigned long int number;
-	unsigned long int _size = sizeof(unsigned long int) * 8;
 
-	j = _size - 1;
+	j = 63;
 	while (j >= 0)
 	{
 		number = n >> j;
