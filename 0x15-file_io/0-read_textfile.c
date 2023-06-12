@@ -30,6 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (op == -1 || wr == -1 || rd == -1 || wr != rd)
 	{
 		free(buff);
+		return (0);
 	}
 	free(buff);
 	close(op);
