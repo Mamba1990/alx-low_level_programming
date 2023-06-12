@@ -50,7 +50,7 @@ void closeFile(int _fd)
  * main - Copies the contents of a file to another file.
  * @argc: The number of arguments
  * @argv: array of pointers to the arguments.
- *
+ * description: exit 97 98 99 100
  * Return: 0
  *
  */
