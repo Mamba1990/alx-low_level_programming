@@ -1,12 +1,14 @@
 #include "search_algos.h"
 
 /**
- * recSarch - searches for a value in an array of
- * ints using the binary SA
- * @array: input
- * @size: array's size
- * @value: value to be searched
- * Return: idx of the number
+ * recSearch - searches for a value in an array of
+ * integers using the Binary search algorithm
+ *
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int recSearch(int *array, size_t size, int value)
 {
@@ -47,6 +49,7 @@ int recSearch(int *array, size_t size, int value)
  * @size: the array's size
  * @value: value to be  searched
  * Return: index of the number
+ * Description: advanced binary research
  */
 int advanced_binary(int *array, size_t size, int value)
 {
